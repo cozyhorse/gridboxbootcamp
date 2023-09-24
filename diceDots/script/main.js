@@ -11,5 +11,3 @@ dots.forEach(dot => {
     })
 
 });
-
-
