@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+h1{
+    text-align: center;
+}
+
+/* diceGrid container */
 .diceGrid-container{
     max-width: 20rem;
     height: 20rem;
@@ -20,6 +25,7 @@
     
 }
 
+/* diceDots */
 .diceDot{
     width: 5rem;
     height: 5rem;
@@ -29,9 +35,6 @@
     
 }
 
-.diceDot:nth-child(2),
-.diceDot:nth-child(5),
-.diceDot:nth-child(8){
-
-    background-color:white;
+.diceDot.active{
+    background-color: white;
 }
