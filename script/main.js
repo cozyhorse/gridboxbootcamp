@@ -7,7 +7,7 @@ dots.forEach(dot => {
     // Make the eventlistner on the looped element -- (dot)
     //and target with currentTarget
     dot.addEventListener("click", (event) => {
-        event.currentTarget.classList.toggle("active")
+        event.currentTarget.classList.toggle("hide")
     })
 
 });
