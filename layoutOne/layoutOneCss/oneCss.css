@@ -28,7 +28,7 @@ body {
 
 /* grid-area construct!
 grid-area:/1-target-start-row
-          /1-start
+          /1-startpostiton-on chosen row
           /3"target-rows"
           /10"row-stretch */
 
@@ -113,4 +113,36 @@ grid-area:/1-target-start-row
     backdrop-filter: blur(7.1px);
     border: 1px solid rgba(255, 255, 255, 0.13);
 
+}
+
+@media screen and (max-width: 600px) {
+    .layOutOne-container{
+        max-width: 80%;
+        height: 100vh;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        gap: 0.5rem;
+    }
+
+    .layOutOne-navBar{
+        grid-area: 1/1/2/10;
+    }
+
+    .layOutOne-header{
+        grid-area: 2/1/4/10;
+    }
+
+    .layOutOne-main{
+        grid-area: 4/1/7/10;
+    }
+
+    .layOutOne-aside{
+        grid-area: 7/1/8/10;
+    }
+
+    .layOutOne-footer{
+        grid-area: 8/1/9/10;
+    }
 }
