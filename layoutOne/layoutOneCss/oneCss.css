@@ -15,7 +15,7 @@ body {
 }
 
 .layOutOne-container {
-    max-width: 80%;
+    max-width: 1000px;
     height: 100vh;
     margin: auto;
     display: grid;
@@ -42,6 +42,8 @@ grid-area:/1-target-start-row
     backdrop-filter: blur(7.1px);
     -webkit-backdrop-filter: blur(7.1px);
     border: 1px solid rgba(255, 255, 255, 0.13);
+    display: flex;
+    flex-direction: column;
 
 
 }
@@ -82,6 +84,21 @@ grid-area:/1-target-start-row
 
 }
 
+.gubbe{
+    width: 3rem;
+    height: auto;
+
+    grid-area: 5/5;
+}
+
+.gubbe1{
+    width: 3rem;
+    height: auto;
+    grid-area: 4/4;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-top: 3rem;
+}
 
 .layOutOne-main {
     grid-area: 4/1/10/8;
